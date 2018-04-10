@@ -31,9 +31,9 @@
             <version>5.1.41</version>
         </dependency>
         <dependency>
-            <groupId>com.bladejava</groupId>
-            <artifactId>blade-jdbc</artifactId>
-            <version>0.2.2-RELEASE</version>
+            <groupId>io.github.biezhi</groupId>
+            <artifactId>anima</artifactId>
+            <version>0.1.0</version>
         </dependency>
     </dependencies>
     <build>

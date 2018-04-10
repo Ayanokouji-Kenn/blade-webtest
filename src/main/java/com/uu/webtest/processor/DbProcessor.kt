@@ -4,15 +4,12 @@ import com.blade.Blade
 import com.blade.event.BeanProcessor
 import com.blade.ioc.annotation.Bean
 import com.blade.ioc.annotation.Order
-import com.blade.jdbc.Base
-import java.sql.Connection
-import java.sql.DriverManager
+import io.github.biezhi.anima.Anima
 
 @Order(1)
 @Bean
 class DbProcessor:BeanProcessor {
     override fun processor(blade: Blade?) {
-        Base.open("jdbc:mysql://127.0.0.1:3306/app", "root", "123456")
-        println("链接数据库")
+        Anima.open("jdbc:mysql://127.0.0.1:3306/webtest", "root", "123456")
     }
 }

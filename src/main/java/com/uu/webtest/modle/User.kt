@@ -1,7 +1,7 @@
 package com.uu.webtest.modle
 
-import com.blade.jdbc.annotation.Table
-import com.blade.jdbc.core.ActiveRecord
+import io.github.biezhi.anima.Model
+import io.github.biezhi.anima.annotation.Table
 
-@Table("t_user")
-data class User(var name:String="",var age:Int = 0):ActiveRecord()
+@Table(name = "user" ,pk = "id")
+data class User(var id:Int? = null, var name:String="",var age:Int = 0):Model()
